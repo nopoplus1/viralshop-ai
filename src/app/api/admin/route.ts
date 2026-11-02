@@ -32,8 +32,22 @@ export async function POST(req:NextRequest){
    }else if(action==='deleteUser'){
     if(body.userId===admin.id)throw new Error('نمی‌توانید حساب خودتان را حذف کنید.');
     const u=db.users.find(x=>x.id===body.userId);if(!u)throw new Error('کاربر پیدا نشد.');
-    const storeIds=db.stores.filter(x=>x.userId===body.userId).map(x=>x.id);db.users=db.users.filter(x=>x.id!==body.userId);db.stores=db.stores.filter(x=>x.userId!==body.userId);for(const key of ['products','members','contents','metrics'] as const)db[key]=db[key].filter(x=>x.userId!==body.userId&&!storeIds.includes(x.storeId));db.usage=db.usage.filter(x=>x.userId!==body.userId);output={ok:true};
-   }else if(action==='deleteStore'){
+  const storeIds = db.stores
+  .filter(x => x.userId === body.userId)
+  .map(x => x.id);
+
+db.users = db.users.filter(x => x.id !== body.userId);
+db.stores = db.stores.filter(x => x.userId !== body.userId);
+
+for (const key of ['products', 'members', 'contents', 'metrics'] as const) {
+  db[key] = db[key].filter(x => 
+    x.userId !== body.userId && 
+    (!x.storeId || !storeIds.includes(x.storeId))
+  );
+}
+
+db.usage = db.usage.filter(x => x.userId !== body.userId);
+output = { ok: true };
     const store=db.stores.find(x=>x.id===body.storeId);if(!store)throw new Error('فروشگاه پیدا نشد.');const ids=[store.id];db.stores=db.stores.filter(x=>x.id!==store.id);db.products=db.products.filter(x=>x.storeId!==store.id);db.members=db.members.filter(x=>x.storeId!==store.id);db.contents=db.contents.filter(x=>x.storeId!==store.id);db.metrics=db.metrics.filter(x=>x.storeId!==store.id);output={ok:true};
    }else if(action==='updatePayment'){
     const p=db.payments.find(x=>x.id===body.paymentId);if(!p)throw new Error('پرداخت پیدا نشد.');

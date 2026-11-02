@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": "f8e0906d-50d3-4c16-a18e-f9f596b5c81c",
+      "email": "alihamedgamers@gmail.com",
+      "name": "amir",
+      "passwordHash": "1472157f8c1ed97f43663e646f4eeeee:9741cca87bc860cf5e1295617acb387a6f5ad1d3cb8e36a70589ecd98e907f604e193a1ef22d8b7189e17a3bef5ce1866048ec3e68165e01493836a416f82ec6",
+      "role": "admin",
+      "planId": "pro",
+      "isActive": true,
+      "subscription": {
+        "planId": "pro",
+        "status": "active",
+        "source": "owner_comp",
+        "expiresAt": null
+      },
+      "createdAt": "2026-11-02T22:05:14.753Z"
+    }
+  ],
+  "stores": [],
+  "products": [],
+  "members": [],
+  "contents": [],
+  "metrics": [],
+  "usage": [],
+  "plans": [
+    {
+      "id": "free",
+      "name": "رایگان",
+      "price": 0,
+      "monthlyLimit": 3,
+      "stores": 1
+    },
+    {
+      "id": "starter",
+      "name": "شروع",
+      "price": 299000,
+      "monthlyLimit": 50,
+      "stores": 3
+    },
+    {
+      "id": "pro",
+      "name": "حرفه‌ای",
+      "price": 799000,
+      "monthlyLimit": 250,
+      "stores": 10
+    }
+  ],
+  "payments": [],
+  "audit": [
+    {
+      "id": "b2141391-6c51-40c4-9160-8fee83090605",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.updateUser",
+      "targetId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "createdAt": "2026-11-02T20:27:18.766Z"
+    },
+    {
+      "id": "0eeb6594-caef-4539-be25-c1066324dbda",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.grantOwner",
+      "targetId": "",
+      "createdAt": "2026-11-02T20:28:06.129Z"
+    },
+    {
+      "id": "50cf768f-a38a-44e6-9887-7a1b40c79e58",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.updateUser",
+      "targetId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "createdAt": "2026-11-02T20:28:31.684Z"
+    },
+    {
+      "id": "82fac848-54c7-4af8-b6a2-b3d02b155e08",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.updateUser",
+      "targetId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "createdAt": "2026-11-02T20:28:44.614Z"
+    },
+    {
+      "id": "5c41fc02-5f26-4882-8bcc-e3a44ccd27ec",
+      "userId": "f8e0906d-50d3-4c16-a18e-f9f596b5c81c",
+      "action": "admin.deleteUser",
+      "targetId": "",
+      "createdAt": "2026-11-02T22:05:47.048Z"
+    }
+  ]
+}

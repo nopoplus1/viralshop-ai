@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": "55e89980-2ab4-4f65-810d-96ff81c9e2f3",
+      "email": "amiruser@gmail.com",
+      "name": "amir",
+      "passwordHash": "a1fba466163ff3aa75802e2502452681:cb709ebcd59fcce363d6531c05f1cc696ebf8f0aef47aab9dc9e30d8d313a901c427c165a43b881731b7b3bd1037db2929d40b54eb520f923c8e16eaf8e760ff",
+      "role": "user",
+      "planId": "pro",
+      "isActive": true,
+      "subscription": {
+        "planId": "free",
+        "status": "free",
+        "source": "default",
+        "expiresAt": null
+      },
+      "createdAt": "2026-11-02T22:26:38.757Z"
+    },
+    {
+      "id": "b34c9dfb-08f6-4b8f-ba04-5dc76e5aa709",
+      "email": "amiradmin@gmail.com",
+      "name": "amir",
+      "passwordHash": "3eb17b2d83cfb26dfb42db56d8c078bb:8b80b694d02a15d5c088c841ebcdecc6157b2b83523a32c4f8ed528da3887aa1630a9932106bd85ec87e20ea3fa69ca7553dd628fd5b90fc085c17bc66db8460",
+      "role": "owner",
+      "planId": "pro",
+      "isActive": true,
+      "subscription": {
+        "planId": "free",
+        "status": "free",
+        "source": "default",
+        "expiresAt": null
+      },
+      "createdAt": "2026-11-02T22:27:38.654Z"
+    }
+  ],
+  "stores": [],
+  "products": [],
+  "members": [],
+  "contents": [],
+  "metrics": [],
+  "usage": [],
+  "plans": [
+    {
+      "id": "free",
+      "name": "رایگان",
+      "price": 0,
+      "monthlyLimit": 3,
+      "stores": 1
+    },
+    {
+      "id": "starter",
+      "name": "شروع",
+      "price": 299000,
+      "monthlyLimit": 50,
+      "stores": 3
+    },
+    {
+      "id": "pro",
+      "name": "حرفه‌ای",
+      "price": 799000,
+      "monthlyLimit": 250,
+      "stores": 10
+    }
+  ],
+  "payments": [],
+  "audit": [
+    {
+      "id": "b2141391-6c51-40c4-9160-8fee83090605",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.updateUser",
+      "targetId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "createdAt": "2026-11-02T20:27:18.766Z"
+    },
+    {
+      "id": "0eeb6594-caef-4539-be25-c1066324dbda",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.grantOwner",
+      "targetId": "",
+      "createdAt": "2026-11-02T20:28:06.129Z"
+    },
+    {
+      "id": "50cf768f-a38a-44e6-9887-7a1b40c79e58",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.updateUser",
+      "targetId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "createdAt": "2026-11-02T20:28:31.684Z"
+    },
+    {
+      "id": "82fac848-54c7-4af8-b6a2-b3d02b155e08",
+      "userId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "action": "admin.updateUser",
+      "targetId": "2e232960-afb6-428c-a53d-c8e0bca32aa1",
+      "createdAt": "2026-11-02T20:28:44.614Z"
+    },
+    {
+      "id": "5c41fc02-5f26-4882-8bcc-e3a44ccd27ec",
+      "userId": "f8e0906d-50d3-4c16-a18e-f9f596b5c81c",
+      "action": "admin.deleteUser",
+      "targetId": "",
+      "createdAt": "2026-11-02T22:05:47.048Z"
+    }
+  ]
+}
